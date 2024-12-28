@@ -7,14 +7,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: brbr
-        run: apt-get -y update && \ 
-           export DEBIAN_FRONTEND=noninteractive && \
-           export TZ=Europe/Moscow && \
-           apt-get -y install gcc g++ make cmake && \
-           g++ --version && \
-           ./gomake && \
-           chmod +x test/make-result* && \
-           chmod +x test/test && \
-           chmod +x test/stress && \
-           test/test && \
-           test/stress
+        run: sudo apt-get -y update && \ 
+           sudo export DEBIAN_FRONTEND=noninteractive && \
+           sudo export TZ=Europe/Moscow && \
+           sudo apt-get -y install gcc g++ make cmake && \
+           sudo g++ --version && \
+           sudo ./gomake && \
+           sudo chmod +x test/make-result* && \
+           sudo chmod +x test/test && \
+           sudo chmod +x test/stress && \
+           sudo test/test && \
+           sudo test/stress
