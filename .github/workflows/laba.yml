@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: brbr
         run: sudo apt-get -y install gcc g++ make cmake && \
-           g++ --version 
+           gcc --version 
           #  ./gomake && \
           #  chmod +x test/make-result* && \
           #  chmod +x test/test && \
