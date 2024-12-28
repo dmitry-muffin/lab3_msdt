@@ -7,8 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: brbr
-        run: apt-get -y update && \ 
-           export DEBIAN_FRONTEND=noninteractive && \
+        run: export DEBIAN_FRONTEND=noninteractive && \
            export TZ=Europe/Moscow && \
            apt-get -y install gcc g++ make cmake && \
            g++ --version 
