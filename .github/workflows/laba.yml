@@ -7,8 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: brbr
-        run: sudo apt-get -y install gcc g++ make cmake && gcc --version 
-          #  ./gomake && \
+        run: sudo apt-get -y install gcc g++ make cmake && gcc --version && ./gomake
           #  chmod +x test/make-result* && \
           #  chmod +x test/test && \
           #  chmod +x test/stress && \
