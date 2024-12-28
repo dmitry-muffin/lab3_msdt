@@ -1,0 +1,20 @@
+name: lab3
+
+on: [ push ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: brbr
+        run: apt-get -y update && \ 
+           export DEBIAN_FRONTEND=noninteractive && \
+           export TZ=Europe/Moscow && \
+           apt-get -y install gcc g++ make cmake && \
+           g++ --version && \
+           ./gomake && \
+           chmod +x test/make-result* && \
+           chmod +x test/test && \
+           chmod +x test/stress && \
+           test/test && \
+           test/stress
