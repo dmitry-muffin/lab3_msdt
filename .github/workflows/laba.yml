@@ -11,7 +11,7 @@ jobs:
            export DEBIAN_FRONTEND=noninteractive && \
            export TZ=Europe/Moscow && \
            apt-get -y install gcc g++ make cmake && \
-           g++ --version && \
+           g++ --version 
           #  ./gomake && \
           #  chmod +x test/make-result* && \
           #  chmod +x test/test && \
